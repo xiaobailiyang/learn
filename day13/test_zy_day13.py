@@ -3,8 +3,7 @@
 # @Time :    2019/5/21  9:47
 
 import unittest
-import os
-from  day13.register import register
+from day13.register import register
 
 
 class RegisterTest(unittest.TestCase):
@@ -21,8 +20,6 @@ class RegisterTest(unittest.TestCase):
 
     def test_register(self):
         '''注册'''
-        # exce ={"code": 1, "msg": "注册成功"}
-        # data=('python180','biaoqing','biaoqing')
         result = register(*self.data)
         try:
             self.assertEqual(self.expected,result,msg='断言失败')
